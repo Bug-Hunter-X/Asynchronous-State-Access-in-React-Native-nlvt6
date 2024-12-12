@@ -1,0 +1,4 @@
+# React Native Asynchronous State Access Bug
+This repository demonstrates a common yet subtle bug in React Native: accessing state before it's fully initialized in an asynchronous operation. The bug is demonstrated in `BugAsyncState.js`, and a solution is provided in `SolutionAsyncState.js`.
+The bug arises because asynchronous operations, such as fetching data from an API, don't instantly update the component's state. Accessing the state before the update completes results in undefined values, potentially causing crashes or unexpected behavior.
+The solution showcases the use of useEffect and optional chaining to handle asynchronous state updates safely.
