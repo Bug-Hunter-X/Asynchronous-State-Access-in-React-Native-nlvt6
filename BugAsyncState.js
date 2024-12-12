@@ -1,0 +1,1 @@
+This error occurs when you try to access a state variable before it has been initialized. This is common in asynchronous operations, where the state update might not be immediate.
